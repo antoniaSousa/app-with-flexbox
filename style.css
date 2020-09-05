@@ -9,12 +9,25 @@ body{
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
 }
-header#main-header{
+input,
+button{
+    outline: 0;
+}
+.content {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+header#main-header {
+    height: 46px;
+    background: #fff;
+}
+
+header#main-header .content{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 46px;
-    background: #ffffff;
+    height: 100%;
 }
 header#main-header nav ul {
     display: flex;
@@ -33,7 +46,45 @@ header#main-header nav ul li {
 header#main-header nav ul li:first-child{
     margin: 0;
 }
-
+header#main-header div.site{
+    display: flex;
+}
+header#main-header div.site input{
+    width: 220px;
+    border: 1px solid #e6ecf0;
+    height: 34px;
+    padding: 0 30px 0 12px;
+    border-radius: 16px;
+    color: #667581;
+    background: #f5f8fa url("/images/search.svg") no-repeat 190px center;
+  
+}
 header#main-header nav ul li im {
     margin-right: 7px;
+}
+
+
+header#main-header div.site img{
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0, 15px;
+   
+
+} 
+header#main-header div.site button{
+    height: 34px;
+    background: #3bb9e3;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffff;
+    border: 0;
+    border-radius: 16px;
 }
